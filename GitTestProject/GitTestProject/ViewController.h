@@ -10,4 +10,6 @@
 
 @interface ViewController : UIViewController
 
+@property int health;
+
 @end

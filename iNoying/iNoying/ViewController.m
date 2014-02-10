@@ -56,18 +56,24 @@
     _player = [[AVAudioPlayer alloc] init];
     
     NSString *soundFilePath = [[NSBundle mainBundle] pathForResource: @"eatshort1" ofType: @"mp3"];
+    if(soundFilePath == NULL){
+        NSLog(@"file not found");
+        return;
+    }
+    
     NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:soundFilePath];
     NSError *error;
     _player = [[AVAudioPlayer alloc] initWithContentsOfURL: fileURL error: &error];
+ 
     
     if(error){
         NSLog(@"error loading sound file! error = %@",error);
-        
+    }
         _player.volume = 1.0;
         [_player play];
         
         
-    }
+    
     
 }
 

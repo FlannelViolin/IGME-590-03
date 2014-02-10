@@ -21,7 +21,6 @@
 		3F55970D18A3CA07001744ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5596EF18A3CA07001744ED /* UIKit.framework */; };
 		3F55971518A3CA07001744ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F55971318A3CA07001744ED /* InfoPlist.strings */; };
 		3F55971718A3CA07001744ED /* iNoyingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F55971618A3CA07001744ED /* iNoyingTests.m */; };
-		3F55972118A3CB6C001744ED /* resources.zip in Resources */ = {isa = PBXBuildFile; fileRef = 3F55972018A3CB6C001744ED /* resources.zip */; };
 		3F55972A18A3CB7D001744ED /* bart_642x642.fw.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F55972218A3CB7D001744ED /* bart_642x642.fw.png */; };
 		3F55972B18A3CB7D001744ED /* bart_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F55972318A3CB7D001744ED /* bart_back.png */; };
 		3F55972C18A3CB7D001744ED /* bart_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F55972418A3CB7D001744ED /* bart_back@2x.png */; };
@@ -62,7 +61,6 @@
 		3F55971218A3CA07001744ED /* iNoyingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iNoyingTests-Info.plist"; sourceTree = "<group>"; };
 		3F55971418A3CA07001744ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3F55971618A3CA07001744ED /* iNoyingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iNoyingTests.m; sourceTree = "<group>"; };
-		3F55972018A3CB6C001744ED /* resources.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = resources.zip; path = ../../../Downloads/resources.zip; sourceTree = "<group>"; };
 		3F55972218A3CB7D001744ED /* bart_642x642.fw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bart_642x642.fw.png; sourceTree = "<group>"; };
 		3F55972318A3CB7D001744ED /* bart_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bart_back.png; sourceTree = "<group>"; };
 		3F55972418A3CB7D001744ED /* bart_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bart_back@2x.png"; sourceTree = "<group>"; };
@@ -135,7 +133,6 @@
 				3F5596FD18A3CA07001744ED /* Main.storyboard */,
 				3F55970018A3CA07001744ED /* ViewController.h */,
 				3F55970118A3CA07001744ED /* ViewController.m */,
-				3F55972018A3CB6C001744ED /* resources.zip */,
 				3F55972218A3CB7D001744ED /* bart_642x642.fw.png */,
 				3F55972318A3CB7D001744ED /* bart_back.png */,
 				3F55972418A3CB7D001744ED /* bart_back@2x.png */,
@@ -257,7 +254,6 @@
 			files = (
 				3F55972C18A3CB7D001744ED /* bart_back@2x.png in Resources */,
 				3F55970418A3CA07001744ED /* Images.xcassets in Resources */,
-				3F55972118A3CB6C001744ED /* resources.zip in Resources */,
 				3F55972F18A3CB7D001744ED /* icon_58x58.png in Resources */,
 				3F55972E18A3CB7D001744ED /* eatshort1.mp3 in Resources */,
 				3F55973118A3CB7D001744ED /* icon_120x120.png in Resources */,
@@ -496,6 +492,7 @@
 				3F55971C18A3CA07001744ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F55971D18A3CA07001744ED /* Build configuration list for PBXNativeTarget "iNoyingTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +501,7 @@
 				3F55971F18A3CA07001744ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -24,7 +24,7 @@ typedef enum : int{
 
 -(BOOL) isAnAce;
 -(BOOL) isAFaceOrTenCard;
-
+-(UIImage *)getCardImage;
 +(NSMutableArray *) createDeck;
 
 @end

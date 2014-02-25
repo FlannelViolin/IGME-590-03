@@ -14,7 +14,30 @@
     if(self.value==1) return YES; // test this in a bit with no "==1"
     return NO;
 }
-
+-(UIImage *)getCardImage{
+    NSString *suit;
+    
+    switch (self.suit) {
+        case PlayingCardSuitClub:
+            suit = @"clubs";
+            break;
+        case PlayingCardSuitSpade:
+            suit = @"spades";
+            break;
+        case PlayingCardSuitDiamond:
+            suit = @"diamonds";
+            break;
+        case PlayingCardSuitHeart:
+            suit = @"hearts";
+            break;
+            
+        default:
+            break;
+    }
+    NSString *filename = [NSString stringWithFormat:@"%@-%d-236x352.png",suit,self.value];
+    UIImage *image = [UIImage imageNamed:filename];
+    return image;
+}
 +(NSMutableArray *) createDeck{
     NSMutableArray *array = [NSMutableArray array];
     PlayingCard *card;

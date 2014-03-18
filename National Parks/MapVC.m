@@ -7,6 +7,7 @@
 //
 
 #import "MapVC.h"
+#import "DataStore.h"
 @import CoreLocation;
 
 @interface MapVC ()
@@ -48,7 +49,8 @@
     [self.markers addObject:m1];
     [self.markers addObject:m2];
     [self.markers addObject:m3];
-    [self.mapView addAnnotations:self.markers];
+    //[self.mapView addAnnotations:self.markers];
+    [self.mapView addAnnotations: [DataStore sharedStore].allItems];
 	// Do any additional setup after loading the view.
 }
 
@@ -60,7 +62,7 @@
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
     CLLocation *location = [locations lastObject];
-    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,30*METERS_PER_MILE,30*METERS_PER_MILE);
+    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,1000*METERS_PER_MILE,1000*METERS_PER_MILE);
     [self.mapView setRegion:viewRegion animated:YES];
     
 }

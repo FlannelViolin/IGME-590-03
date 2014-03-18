@@ -30,6 +30,9 @@
 		3F9070C018D7D4AB007AC5CC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9070BF18D7D4AB007AC5CC /* MapKit.framework */; };
 		3F9070C318D7D622007AC5CC /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9070C218D7D622007AC5CC /* MapVC.m */; };
 		3F9070C618D7D910007AC5CC /* MyMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9070C518D7D910007AC5CC /* MyMarker.m */; };
+		3FBB752318D86EE6002EDD94 /* Park.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB752218D86EE6002EDD94 /* Park.m */; };
+		3FBB752518D86FF5002EDD94 /* nps_parks.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3FBB752418D86FF5002EDD94 /* nps_parks.csv */; };
+		3FBB752818D874AE002EDD94 /* DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB752718D874AE002EDD94 /* DataStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,11 @@
 		3F9070C218D7D622007AC5CC /* MapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapVC.m; path = ../MapVC.m; sourceTree = "<group>"; };
 		3F9070C418D7D910007AC5CC /* MyMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMarker.h; sourceTree = "<group>"; };
 		3F9070C518D7D910007AC5CC /* MyMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMarker.m; sourceTree = "<group>"; };
+		3FBB752118D86EE6002EDD94 /* Park.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Park.h; sourceTree = "<group>"; };
+		3FBB752218D86EE6002EDD94 /* Park.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Park.m; sourceTree = "<group>"; };
+		3FBB752418D86FF5002EDD94 /* nps_parks.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nps_parks.csv; sourceTree = "<group>"; };
+		3FBB752618D874AE002EDD94 /* DataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStore.h; sourceTree = "<group>"; };
+		3FBB752718D874AE002EDD94 /* DataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,10 +143,15 @@
 			children = (
 				3F9070C118D7D622007AC5CC /* MapVC.h */,
 				3F9070C218D7D622007AC5CC /* MapVC.m */,
+				3FBB752118D86EE6002EDD94 /* Park.h */,
+				3FBB752218D86EE6002EDD94 /* Park.m */,
+				3FBB752418D86FF5002EDD94 /* nps_parks.csv */,
 				3F9070C418D7D910007AC5CC /* MyMarker.h */,
 				3F9070C518D7D910007AC5CC /* MyMarker.m */,
 				3F90708918D7D1B0007AC5CC /* AppDelegate.h */,
 				3F90708A18D7D1B0007AC5CC /* AppDelegate.m */,
+				3FBB752618D874AE002EDD94 /* DataStore.h */,
+				3FBB752718D874AE002EDD94 /* DataStore.m */,
 				3F90708C18D7D1B0007AC5CC /* Main_iPhone.storyboard */,
 				3F90708F18D7D1B0007AC5CC /* Main_iPad.storyboard */,
 				3F9070B218D7D1BB007AC5CC /* Tab Bar Icons */,
@@ -274,6 +287,7 @@
 				3F9070BB18D7D1BB007AC5CC /* location-25.png in Resources */,
 				3F9070BD18D7D1BB007AC5CC /* satellite_in_orbit-25.png in Resources */,
 				3F90708E18D7D1B0007AC5CC /* Main_iPhone.storyboard in Resources */,
+				3FBB752518D86FF5002EDD94 /* nps_parks.csv in Resources */,
 				3F9070BC18D7D1BB007AC5CC /* location-50.png in Resources */,
 				3F9070B918D7D1BB007AC5CC /* about-25.png in Resources */,
 				3F90708518D7D1B0007AC5CC /* InfoPlist.strings in Resources */,
@@ -295,10 +309,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FBB752318D86EE6002EDD94 /* Park.m in Sources */,
 				3F9070C318D7D622007AC5CC /* MapVC.m in Sources */,
 				3F9070C618D7D910007AC5CC /* MyMarker.m in Sources */,
 				3F90708B18D7D1B0007AC5CC /* AppDelegate.m in Sources */,
 				3F90708718D7D1B0007AC5CC /* main.m in Sources */,
+				3FBB752818D874AE002EDD94 /* DataStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +454,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "National Parks/National Parks-Prefix.pch";
 				INFOPLIST_FILE = "National Parks/National Parks-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -451,6 +468,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "National Parks/National Parks-Prefix.pch";
 				INFOPLIST_FILE = "National Parks/National Parks-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -517,6 +535,7 @@
 				3F9070AE18D7D1B0007AC5CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F9070AF18D7D1B0007AC5CC /* Build configuration list for PBXNativeTarget "National ParksTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +544,7 @@
 				3F9070B118D7D1B0007AC5CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

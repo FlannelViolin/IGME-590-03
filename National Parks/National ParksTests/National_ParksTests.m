@@ -1,18 +1,18 @@
 //
-//  NationalParksTests.m
-//  NationalParksTests
+//  National_ParksTests.m
+//  National ParksTests
 //
-//  Created by Student on 3/11/14.
+//  Created by Student on 3/17/14.
 //  Copyright (c) 2014 Student. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface NationalParksTests : XCTestCase
+@interface National_ParksTests : XCTestCase
 
 @end
 
-@implementation NationalParksTests
+@implementation National_ParksTests
 
 - (void)setUp
 {
